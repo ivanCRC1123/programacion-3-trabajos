@@ -1,0 +1,28 @@
+### Listar clientes
+GET http://localhost:8000/clientes
+
+
+
+### Filtrar por nombre
+GET http://localhost:8000/clientes?nombre=ivan
+
+
+
+### Crear cliente
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nombre": "ivan",
+  "edad": 22
+}
+
+
+### Obtener cliente por ID
+GET http://localhost:8000/clientes/2
+
+
+
+### Eliminar cliente
+DELETE http://localhost:8000/clientes/1
